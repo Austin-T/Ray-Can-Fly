@@ -165,8 +165,8 @@ class Cloud {
 class Plane {
     constructor(x, y) {
 
-        this.width = 150;
-        this.height = 200;
+        this.width = 250;
+        this.height = 300;
 
         this.imageReady = document.querySelector(".planeImageReady");
         this.imageThrow = document.querySelector(".planeImageThrow");
@@ -206,10 +206,10 @@ class Plane {
         this.planeDirection *= 0.98;
     }
     getWidth(){
-        return 100;
+        return 200;
     }
     getHeight(){
-        return 100;
+        return 150;
     }
     getXPos(){
         // This function returns the current x position of the paddle
@@ -390,7 +390,7 @@ function checkCollide(rect1, rect2) {
 function throwRock() {
     if (clock - lastThrow > 100) {
         let new_rock = new Rock(
-            plane.getXPos() + 130,
+            plane.getXPos() + 220,
             plane.getYPos()
         );
         rockList.push(new_rock);
