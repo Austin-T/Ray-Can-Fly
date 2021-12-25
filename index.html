@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Ray's Flight Simulator</title>
+</head>
+<body>
+    <div class="preload" id="preload">
+        <div class="preloadText">
+            <h1>Ray's Flight Simulator</h1>
+            <p>State of the art graphics, physics, and computer gaming.</p>
+            <br>
+            <p2>Pilot your aircraft for as long as possible using the up and down arrow keys! Avoid clouds as they can obscure your vision. Press 'Space' to throw rocks out of the cockpit... it may help with those pesky parrots.</p2>
+            <br>
+            <br>
+            <p2>Press 'Enter' to begin</p2>
+        </div>
+        <img class="cloud1" src="./img/cloud.png" alt="cloud1">
+        <img class="cloud2" src="./img/cloud.png" alt="cloud2">
+        <img class="cloud3" src="./img/cloud.png" alt="cloud3">
+        <img class="plane" src="./img/planeHello.png" alt="plane">
+    </div>
+    <div class="app">
+        <header>
+            <div class="logotxt">
+                <h1>Ray's Flight Simulator</h1>
+                <p>State of the art graphics, physics, and computer gaming.</p>
+            </div>
+            <div class="score">
+                <h1 id="scoreInt">0</h1>
+                <p>Score</p>
+            </div>
+        </header>
+        <div class="game">
+            <img class="cloudImage" src="./img/cloud.png" alt="cloud" style="display:none;">
+            <img class="birdImage" src="./img/bird.png" alt="bird" style="display:none;">
+            <img class="rockImage" src="./img/rock.png" alt="rock" style="display:none;">
+
+            <img class="planeImageReady" src="./img/planeReady.png" alt="plane" style="display:none;">
+            <img class="planeImageThrow" src="./img/planeThrow.png" alt="plane" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_1.png" alt="explosion1" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_2.png" alt="explosion2" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_3.png" alt="explosion3" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_4.png" alt="explosion4" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_5.png" alt="explosion5" style="display:none;">
+            <img class="explosionImage" src="./img/explosion_6.png" alt="explosion6" style="display:none;">
+
+            <canvas id="gameScreen"></canvas>
+        </div>
+        <div class="gameOver" id="gameOver" style="display:none;">
+            <h1>Game Over</h1>
+            <p>Those pesky parrots destroyed your aircraft. Press 'Enter' to play again.</p>
+        </div>
+        <!-- <img class="cloudEffect" src="./img/cloud.png" alt="cloudEffect"> -->
+        <div class="cloudEffect"></div>
+    </div>
+    
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
